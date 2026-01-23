@@ -5,10 +5,10 @@
 int main() {
     printf("Indulás előtt: Egy folyamat vagyok (PID: %d)\n", getpid());
 
-    pid_t pid = fork(); // Itt történik a hasadás
+    pid_t pid = fork();
 
     if (pid < 0) {
-        perror("Fork failed");
+        perror("Fork");
         return 1;
     }
 

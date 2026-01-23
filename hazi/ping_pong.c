@@ -22,6 +22,7 @@ typedef struct {
 
 int main() {
     // Közös memória a szemaforoknak
+//a
     SharedSems *sems = mmap(NULL, sizeof(SharedSems),
                             PROT_READ | PROT_WRITE,
                             MAP_SHARED | MAP_ANONYMOUS,

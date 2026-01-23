@@ -15,7 +15,7 @@ int main() {
     }
 
     if (pid == 0) {
-        // GYEREK folyamat
+ 
         printf("[Gyerek] Elindultam, PID: %d\n", getpid());
         printf("[Gyerek] Dolgozom 2 másodpercig...\n");
         sleep(2);
@@ -30,11 +30,11 @@ int main() {
         // Akkor zombie lesz a gyerek.
         // 
         // MÁSODSZOR uncomment-eld ki ezt:
-        /*
+        
         printf("[Szülő] Megvárom a gyereket...\n");
         wait(NULL);
         printf("[Szülő] A gyerek befejeződött, nincs több zombie!\n");
-        */
+        
         
         // =====================
         
